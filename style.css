@@ -1,0 +1,102 @@
+:root{
+    --x: 0;
+}
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navigation bar */
+.navbar{
+    background-color: white;
+}
+.nv-itm{
+    margin: 0px 20px;
+}
+
+/* front */
+.front{
+    width: 100%;
+    height: 90vh;
+    
+}
+.started{
+    position: relative;
+    top: 240px;
+    left: 12%;
+    width: 200px;
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+.front-heading{
+    position: relative;
+    top: 220px;
+    left: 12%;
+    font-size: 3rem;
+    font-weight: bolder;
+
+}
+.front-img{
+    position: relative;
+    top: 200px;
+    right: -20%;
+}
+/* mid-section */
+.abv-test-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-div{
+    margin-top: 15px;
+    margin-top: 15px;
+    width: 85%;
+    height: 40vh;
+    border: 2px solid rgb(220, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.text{
+    font-size: 25px;
+    border-right: 5px solid;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 92%;
+    animation: 
+        typing 3s steps(82),
+        cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{border-color: transparent;}
+
+}
+@keyframes typing{
+    from{width: 0;}
+    
+}
+.test-div:hover{
+    transform: scale(1.05);
+}
+/* about-us page */
+.about-div{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.members{
+    background: linear-gradient(
+        #21262d 0%,
+        #303842 20%,
+        #21262d 100%
+    );
+}
+.about-div *{
+    margin: 10px 0px;
+}
