@@ -2,21 +2,36 @@
     --x: 0;
 }
 body{
-    background-color: white;
+    background-color: rgb(168, 165, 165);
     font-family: 'Montserrat', sans-serif;
 }
 /* navigation bar */
-.navbar{
-    background-color: white;
+.navbar-top{
+    background-color: rgb(168, 165, 165);
+    transition: all 0.4s ease;
+}
+
+.navbar-top:hover{
+    background: linear-gradient(
+        rgb(118, 116, 116) 0%,
+        rgb(168, 165, 165) 100%
+    );
+    transform: scale(1.02);
 }
 .nv-itm{
     margin: 0px 20px;
 }
 
 /* front */
+
+.shift{
+    left: -300px;
+}
+
 .front{
-    width: 100%;
+    width: 100vh;
     height: 90vh;
+    background-color: rgb(168, 165, 165);
     
 }
 .started{
@@ -27,6 +42,10 @@ body{
     font-size: 1.5rem;
     border: 3px solid black;
     border-radius: 25px;
+    transition: all 0.5s ease;
+}
+.started:hover{
+    transform: scale(1.08);
 }
 .front-heading{
     position: relative;
@@ -34,12 +53,35 @@ body{
     left: 12%;
     font-size: 3rem;
     font-weight: bolder;
+    transition: all 0.5s ease;
 
+}
+.front-heading:hover{
+    color: white;
+    transform: scale(1.08);
 }
 .front-img{
     position: relative;
     top: 200px;
     right: -20%;
+}
+.nav-link{
+    transition: all 0.4 ease;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    color: white;
+}
+/* chatbot section */
+.chat-inp{
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+}
+label:hover{
+    cursor: pointer;
 }
 /* mid-section */
 .abv-test-div{
@@ -49,7 +91,6 @@ body{
 }
 
 .test-div{
-    margin-top: 15px;
     margin-top: 15px;
     width: 85%;
     height: 40vh;
